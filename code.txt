@@ -1,0 +1,11 @@
+int singleNumber(int A[], int n) {
+       int result = 0;
+       for(int i=0;i<n;i++){
+           result ^= A[i];
+       }
+       return result;
+};
+
+using bit operation " ^ " -> exclusive or
+
+exclusive or can cumulate the result and the two same numbers will get zero.
